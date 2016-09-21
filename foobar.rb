@@ -1,7 +1,7 @@
 class Foobar
 
   def self.baz(a)
-    intermediate = a.map{|b| b.to_i + 2} 
+    intermediate = a.map{|b| b.to_i + 2}
     intermediate = intermediate.select do |elem|
       elem < 10 && (elem % 2 == 0)
     end
